@@ -1,0 +1,128 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "created_date": "2026-03-14",
+        "description": "Developer overrides for known FDC mapping failures. Used by normalizer to reject bad FDC matches.",
+        "total_corrections": 10,
+        "notes": "When normalizer finds one of these ingredients, it will use the ingredient_id_to_use instead of accepting the FDC match."
+    },
+    "rejected_fdc_matches": [
+        {
+            "parsed_ingredient_pattern": "jamón serrano",
+            "fdc_id_that_failed": 169395,
+            "fdc_canonical_that_failed": "Peppers, serrano, raw",
+            "fdc_category_that_failed": "Vegetables and Vegetable Products",
+            "ingredient_id_to_use": "ing_ham_serrano_001",
+            "reason": "Parser confusion: jamón (ham) != serrano peppers. FDC category completely wrong.",
+            "added_date": "2026-03-14",
+            "developer": "code_owner"
+        },
+        {
+            "parsed_ingredient_pattern": "vino seco",
+            "fdc_id_that_failed": 746765,
+            "fdc_canonical_that_failed": "Cheese, dry white, queso seco",
+            "fdc_category_that_failed": "Dairy and Egg Products",
+            "ingredient_id_to_use": "ing_wine_dry_white_001",
+            "reason": "Parser extracted 'seco' from 'vino seco', FDC matched it to 'queso seco' (dry cheese). Wine != Dairy.",
+            "added_date": "2026-03-14",
+            "developer": "code_owner"
+        },
+        {
+            "parsed_ingredient_pattern": "onion powder",
+            "fdc_id_that_failed": null,
+            "fdc_canonical_that_failed": null,
+            "fdc_category_that_failed": "Vegetables and Vegetable Products",
+            "ingredient_id_to_use": "ing_onion_powder_001",
+            "reason": "Semantic validation: onion powder should not be in Vegetables category, belongs in Spices.",
+            "added_date": "2026-03-14",
+            "developer": "code_owner"
+        },
+        {
+            "parsed_ingredient_pattern": "garlic powder",
+            "fdc_id_that_failed": null,
+            "fdc_canonical_that_failed": null,
+            "fdc_category_that_failed": "Vegetables and Vegetable Products",
+            "ingredient_id_to_use": "ing_garlic_powder_001",
+            "reason": "Semantic validation: garlic powder should not be in Vegetables category, belongs in Spices.",
+            "added_date": "2026-03-14",
+            "developer": "code_owner"
+        },
+        {
+            "parsed_ingredient_pattern": "dry white wine",
+            "fdc_id_that_failed": 746765,
+            "fdc_canonical_that_failed": "Cheese, dry white, queso seco",
+            "fdc_category_that_failed": "Dairy and Egg Products",
+            "ingredient_id_to_use": "ing_wine_dry_white_001",
+            "reason": "Same issue as vino seco - FDC maps wine to cheese.",
+            "added_date": "2026-03-14",
+            "developer": "code_owner"
+        },
+        {
+            "parsed_ingredient_pattern": "white wine",
+            "fdc_id_that_failed": 746765,
+            "fdc_canonical_that_failed": "Cheese, dry white, queso seco",
+            "fdc_category_that_failed": "Dairy and Egg Products",
+            "ingredient_id_to_use": "ing_wine_dry_white_001",
+            "reason": "Same issue as vino seco - FDC maps wine to cheese.",
+            "added_date": "2026-03-14",
+            "developer": "code_owner"
+        },
+        {
+            "parsed_ingredient_pattern": "jamon",
+            "fdc_id_that_failed": 169395,
+            "fdc_canonical_that_failed": "Peppers, serrano, raw",
+            "fdc_category_that_failed": "Vegetables and Vegetable Products",
+            "ingredient_id_to_use": "ing_ham_serrano_001",
+            "reason": "Alias for jamón serrano - maps to pepper incorrectly.",
+            "added_date": "2026-03-14",
+            "developer": "code_owner"
+        },
+        {
+            "parsed_ingredient_pattern": "spanish ham",
+            "fdc_id_that_failed": 169395,
+            "fdc_canonical_that_failed": "Peppers, serrano, raw",
+            "fdc_category_that_failed": "Vegetables and Vegetable Products",
+            "ingredient_id_to_use": "ing_ham_serrano_001",
+            "reason": "Alias for jamón serrano - maps to pepper incorrectly.",
+            "added_date": "2026-03-14",
+            "developer": "code_owner"
+        },
+        {
+            "parsed_ingredient_pattern": "nutmeg ground",
+            "fdc_id_that_failed": 172335,
+            "fdc_canonical_that_failed": "Oil, nutmeg butter",
+            "fdc_category_that_failed": "Fats and Oils",
+            "ingredient_id_to_use": "ing_nutmeg_ground_001",
+            "reason": "Low confidence (0.621) match - should be spice, not oil. Semantic validation caught this.",
+            "added_date": "2026-03-14",
+            "developer": "code_owner"
+        },
+        {
+            "parsed_ingredient_pattern": "bay leaf",
+            "fdc_id_that_failed": null,
+            "fdc_canonical_that_failed": "Spices, bay leaf",
+            "fdc_category_that_failed": "Spices and Herbs",
+            "ingredient_id_to_use": "ing_bay_leaf_001",
+            "reason": "Count-based item - should use ingredient_id for proper aggregation in grocery lists.",
+            "added_date": "2026-03-14",
+            "developer": "code_owner"
+        }
+    ],
+    "fallback_strategy": {
+        "description": "If a parsed ingredient matches a rejected pattern, normalizer should:",
+        "steps": [
+            "Check if parsed_ingredient_pattern matches any entry here",
+            "If match found: use ingredient_id_to_use from this file",
+            "If no match: try FDC lookup normally",
+            "If FDC gives 1.0 confidence AND matches semantic validation: accept it",
+            "If FDC gives confidence < 0.85: reject and use ingredient_id fallback",
+            "If no FDC at all: output ingredient_id as NULL (unresolved)"
+        ]
+    },
+    "notes": [
+        "This file is the central place to document why an ingredient was rejected.",
+        "Update this with new corrections as you find them.",
+        "In Phase 3, consider migrating to database with crowdsourced voting.",
+        "Each entry serves as an audit trail for data quality issues."
+    ]
+}

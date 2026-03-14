@@ -1,0 +1,384 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "created_date": "2026-03-14",
+        "description": "Global ingredient registry for Just Meal Planner. Seed data for ingredients table.",
+        "total_ingredients": 0,
+        "notes": "This file is version-controlled in git. Update here, then import to DB in Phase 3."
+    },
+    "ingredients": [
+        {
+            "ingredient_id": "ing_ham_serrano_001",
+            "canonical_name": "Ham, Jamón Serrano",
+            "category": "Cold Cuts & Cured Meats",
+            "type": "cured_meat",
+            "description": "Spanish dry-cured ham from Jamón Serrano pigs",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "FDC ID 169395 is incorrect (maps to 'Peppers, serrano, raw')",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "jamón",
+                "jamon",
+                "jamón serrano",
+                "jamon serrano",
+                "spanish ham"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_ham_prosciutto_001",
+                    "reason": "similar_cured_meat"
+                },
+                {
+                    "ingredient_id": "ing_ham_iberico_001",
+                    "reason": "similar_spanish_meat"
+                }
+            ],
+            "metadata": {
+                "region": "Spain",
+                "preservation_method": "cured",
+                "typical_quantity_unit": "gram"
+            }
+        },
+        {
+            "ingredient_id": "ing_wine_dry_white_001",
+            "canonical_name": "Wine, Dry White",
+            "category": "Beverages",
+            "type": "beverage",
+            "description": "Dry white wine for cooking or drinking",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "FDC ID 746765 is incorrect (maps to 'Cheese, dry white, queso seco')",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "vino seco",
+                "vino",
+                "dry white wine",
+                "white wine",
+                "white wine dry"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_wine_dry_red_001",
+                    "reason": "flavor_substitute"
+                },
+                {
+                    "ingredient_id": "ing_stock_chicken_001",
+                    "reason": "cooking_substitute"
+                }
+            ],
+            "metadata": {
+                "style": "dry",
+                "color": "white",
+                "typical_quantity_unit": "ml"
+            }
+        },
+        {
+            "ingredient_id": "ing_onion_powder_001",
+            "canonical_name": "Onion Powder",
+            "category": "Spices & Seasonings",
+            "type": "spice_powder",
+            "description": "Dried ground onion, used as seasoning",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "Parser often misclassifies as fresh onion instead of spice",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "onion powder",
+                "powdered onion",
+                "dried onion powder"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_garlic_powder_001",
+                    "reason": "similar_powder"
+                },
+                {
+                    "ingredient_id": "ing_onion_fresh_001",
+                    "reason": "fresh_substitute"
+                }
+            ],
+            "metadata": {
+                "typical_quantity_unit": "gram",
+                "is_powder": true
+            }
+        },
+        {
+            "ingredient_id": "ing_ham_prosciutto_001",
+            "canonical_name": "Ham, Prosciutto",
+            "category": "Cold Cuts & Cured Meats",
+            "type": "cured_meat",
+            "description": "Italian cured ham, thinly sliced",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "Manual entry - not yet in FDC validation",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "prosciutto",
+                "prosciutto ham",
+                "italian ham"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_ham_serrano_001",
+                    "reason": "similar_cured_meat"
+                },
+                {
+                    "ingredient_id": "ing_ham_iberico_001",
+                    "reason": "similar_cured_meat"
+                }
+            ],
+            "metadata": {
+                "region": "Italy",
+                "preservation_method": "cured",
+                "typical_quantity_unit": "gram"
+            }
+        },
+        {
+            "ingredient_id": "ing_ham_iberico_001",
+            "canonical_name": "Ham, Jamón Ibérico",
+            "category": "Cold Cuts & Cured Meats",
+            "type": "cured_meat",
+            "description": "Spanish cured ham from black pigs, premium variety",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "Manual entry - not yet in FDC validation",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "jamón ibérico",
+                "jamon iberico",
+                "iberian ham",
+                "black pig ham"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_ham_serrano_001",
+                    "reason": "similar_spanish_meat"
+                },
+                {
+                    "ingredient_id": "ing_ham_prosciutto_001",
+                    "reason": "similar_cured_meat"
+                }
+            ],
+            "metadata": {
+                "region": "Spain",
+                "preservation_method": "cured",
+                "typical_quantity_unit": "gram"
+            }
+        },
+        {
+            "ingredient_id": "ing_wine_dry_red_001",
+            "canonical_name": "Wine, Dry Red",
+            "category": "Beverages",
+            "type": "beverage",
+            "description": "Dry red wine for cooking or drinking",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "Manual entry - not yet in FDC validation",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "vino tinto",
+                "red wine",
+                "dry red wine"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_wine_dry_white_001",
+                    "reason": "flavor_substitute"
+                },
+                {
+                    "ingredient_id": "ing_stock_beef_001",
+                    "reason": "cooking_substitute"
+                }
+            ],
+            "metadata": {
+                "style": "dry",
+                "color": "red",
+                "typical_quantity_unit": "ml"
+            }
+        },
+        {
+            "ingredient_id": "ing_stock_chicken_001",
+            "canonical_name": "Chicken Stock",
+            "category": "Broths & Stocks",
+            "type": "broth",
+            "description": "Light broth made from chicken bones and vegetables",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "Manual entry",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "chicken stock",
+                "chicken broth",
+                "chicken bouillon"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_stock_beef_001",
+                    "reason": "similar_stock"
+                },
+                {
+                    "ingredient_id": "ing_stock_vegetable_001",
+                    "reason": "similar_stock"
+                }
+            ],
+            "metadata": {
+                "typical_quantity_unit": "ml"
+            }
+        },
+        {
+            "ingredient_id": "ing_stock_beef_001",
+            "canonical_name": "Beef Stock",
+            "category": "Broths & Stocks",
+            "type": "broth",
+            "description": "Rich broth made from beef bones",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "Manual entry",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "beef stock",
+                "beef broth"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_stock_chicken_001",
+                    "reason": "similar_stock"
+                }
+            ],
+            "metadata": {
+                "typical_quantity_unit": "ml"
+            }
+        },
+        {
+            "ingredient_id": "ing_stock_vegetable_001",
+            "canonical_name": "Vegetable Stock",
+            "category": "Broths & Stocks",
+            "type": "broth",
+            "description": "Light broth made from vegetables",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "Manual entry",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "vegetable stock",
+                "vegetable broth"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_stock_chicken_001",
+                    "reason": "similar_stock"
+                }
+            ],
+            "metadata": {
+                "typical_quantity_unit": "ml"
+            }
+        },
+        {
+            "ingredient_id": "ing_garlic_powder_001",
+            "canonical_name": "Garlic Powder",
+            "category": "Spices & Seasonings",
+            "type": "spice_powder",
+            "description": "Dried ground garlic, used as seasoning",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "Manual entry",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "garlic powder",
+                "powdered garlic",
+                "dried garlic powder"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_onion_powder_001",
+                    "reason": "similar_powder"
+                }
+            ],
+            "metadata": {
+                "typical_quantity_unit": "gram",
+                "is_powder": true
+            }
+        },
+        {
+            "ingredient_id": "ing_onion_fresh_001",
+            "canonical_name": "Onion, Yellow Fresh",
+            "category": "Vegetables & Vegetable Products",
+            "type": "vegetable",
+            "description": "Fresh yellow onion, commonly used in cooking",
+            "fdc_reference": {
+                "fdc_id": 790646,
+                "fdc_canonical_name": "Onions, yellow, raw",
+                "fdc_reason": "Correct FDC mapping",
+                "is_correct_match": true
+            },
+            "aliases": [
+                "yellow onion",
+                "onion",
+                "fresh onion"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_onion_white_001",
+                    "reason": "similar_vegetable"
+                }
+            ],
+            "metadata": {
+                "typical_quantity_unit": "gram"
+            }
+        },
+        {
+            "ingredient_id": "ing_onion_white_001",
+            "canonical_name": "Onion, White Fresh",
+            "category": "Vegetables & Vegetable Products",
+            "type": "vegetable",
+            "description": "Fresh white onion, milder flavor than yellow",
+            "fdc_reference": {
+                "fdc_id": null,
+                "fdc_canonical_name": null,
+                "fdc_reason": "Manual entry - subset of onions",
+                "is_correct_match": false
+            },
+            "aliases": [
+                "white onion",
+                "sweet white onion"
+            ],
+            "substitutions": [
+                {
+                    "ingredient_id": "ing_onion_fresh_001",
+                    "reason": "similar_vegetable"
+                }
+            ],
+            "metadata": {
+                "typical_quantity_unit": "gram"
+            }
+        }
+    ],
+    "notes": [
+        "This is a template with ~12 known corrections.",
+        "Add remaining ~600-800 ingredients from your current normalized output.",
+        "In Phase 1-2, this stays as JSON in git.",
+        "In Phase 3, import to DB table and add user preference overrides.",
+        "All ingredient_ids should follow pattern: ing_<category>_<type>_NNN"
+    ]
+}
