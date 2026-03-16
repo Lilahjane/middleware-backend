@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Meal Planner - Recipe Processing & Grocery List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Just Meal Planner</h1>
+            <p class="subtitle">Recipe Scraping → Normalization → Grocery List</p>
+            <div class="status-bar">
+                <span id="apiStatus" class="status-indicator waiting">Initializing...</span>
+                <span class="divider">•</span>
+                <span id="errorCount" class="error-count">0 errors</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- SECTION 1: Recipe Input & Scraping -->
+            <section class="section" id="section-1">
+                <div class="section-header">
+                    <span class="section-number">1</span>
+                    <h2>Recipe Scraper</h2>
+                </div>
+
+                <div class="input-group">
+                    <input type="url" id="urlInput" placeholder="https://example.com/recipe" class="url-input">
+                    <button id="scrapeBtn" class="btn btn-primary">Scrape Recipe</button>
+                </div>
+
+                <div id="scrapeProgress" class="progress-container hidden">
+                    <div class="spinner"></div>
+                    <p>Scraping recipe...</p>
+                </div>
+
+                <div id="recipeRawData" class="raw-data-container hidden">
+                    <details>
+                        <summary>📋 Raw Recipe JSON</summary>
+                        <pre id="rawRecipeJson"></pre>
+                    </details>
+                </div>
+            </section>
+
+            <!-- SECTION 2: Error Handling & Display -->
+            <section class="section" id="section-2">
+                <div class="section-header">
+                    <span class="section-number">2</span>
+                    <h2>Error Handling</h2>
+                </div>
+
+                <div id="errorDisplay" class="error-display hidden">
+                    <div class="error-box">
+                        <div class="error-header">
+                            <span class="error-icon">⚠️</span>
+                            <span id="errorType" class="error-type"></span>
+                        </div>
+                        <div class="error-content">
+                            <p class="error-message" id="errorMessage"></p>
+                            <div class="error-details">
+                                <p><strong>Error ID:</strong> <code id="errorId"></code></p>
+                                <p><strong>Timestamp:</strong> <span id="errorTimestamp"></span></p>
+                                <p id="urlDisplay" class="error-url hidden">
+                                    <strong>URL:</strong> <code id="errorUrl"></code>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="error-actions">
+                            <button class="btn btn-secondary" onclick="clearError()">Dismiss</button>
+                            <button class="btn btn-secondary" onclick="retryLastUrl()">Retry</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="errorLog" class="error-log hidden">
+                    <summary>📊 Recent Errors</summary>
+                    <div id="errorLogList" class="error-log-list"></div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: Recipe Confirmation & ID Assignment -->
+            <section class="section" id="section-3">
+                <div class="section-header">
+                    <span class="section-number">3</span>
+                    <h2>Recipe Confirmation</h2>
+                </div>
+
+                <div id="recipeConfirmation" class="recipe-card hidden">
+                    <div class="recipe-header">
+                        <h3 id="recipeTitleDisplay"></h3>
+                        <img id="recipeImageDisplay" class="recipe-image" src="" alt="Recipe image"
+                            onerror="this.style.display='none'">
+                    </div>
+
+                    <div class="recipe-info">
+                        <div class="info-item">
+                            <span class="label">Yield/Servings:</span>
+                            <span id="yieldDisplay"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Cook Time:</span>
+                            <span id="cookTimeDisplay"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Prep Time:</span>
+                            <span id="prepTimeDisplay"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Cuisine:</span>
+                            <span id="cuisineDisplay"></span>
+                        </div>
+                    </div>
+
+                    <div class="recipe-actions">
+                        <button id="assignIdBtn" class="btn btn-success">Save & Assign ID</button>
+                        <button class="btn btn-secondary" onclick="clearRecipe()">Clear</button>
+                    </div>
+
+                    <div id="idAssignment" class="id-assignment hidden">
+                        <div class="id-box">
+                            <p class="label">✓ Recipe ID Assigned:</p>
+                            <code id="assignedRecipeId" class="recipe-id-display"></code>
+                            <p class="note">This ID has been generated and is ready for storage.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 4: Ingredient Normalization -->
+            <section class="section" id="section-4">
+                <div class="section-header">
+                    <span class="section-number">4</span>
+                    <h2>Ingredient Normalization</h2>
+                </div>
+
+                <div id="ingredientTable" class="ingredient-table hidden">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Original Ingredient</th>
+                                <th>Canonical Name</th>
+                                <th>Ingredient ID</th>
+                                <th>Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ingredientTableBody">
+                        </tbody>
+                    </table>
+                    <div id="unresolvedCount" class="unresolved-warning hidden"></div>
+                </div>
+            </section>
+
+            <!-- SECTION 5: Yield Scaling Calculator -->
+            <section class="section" id="section-5">
+                <div class="section-header">
+                    <span class="section-number">5</span>
+                    <h2>Yield Scaling Calculator</h2>
+                </div>
+
+                <div id="scalingControls" class="scaling-controls hidden">
+                    <div class="scaling-input-group">
+                        <label for="servingScale">Scale recipe to:</label>
+                        <select id="servingScale" class="serving-select">
+                            <option value="1">1 serving</option>
+                            <option value="2">2 servings</option>
+                            <option value="4" selected>4 servings (original)</option>
+                            <option value="6">6 servings</option>
+                            <option value="8">8 servings</option>
+                            <option value="custom">Custom servings</option>
+                        </select>
+                        <input type="number" id="customServings" min="1" step="0.5" placeholder="Enter custom number"
+                            class="custom-input hidden">
+                        <button class="btn btn-secondary" onclick="updateScaling()">Update</button>
+                    </div>
+
+                    <div class="scaling-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ingredient</th>
+                                    <th>Original Amount</th>
+                                    <th>Scaled Amount</th>
+                                    <th>Calculation</th>
+                                </tr>
+                            </thead>
+                            <tbody id="scalingTableBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 6: Grocery List Aggregation -->
+            <section class="section" id="section-6">
+                <div class="section-header">
+                    <span class="section-number">6</span>
+                    <h2>Grocery List</h2>
+                </div>
+
+                <div id="groceryListControls" class="grocery-controls hidden">
+                    <p class="info">Currently processing <strong id="recipeCount">1</strong> recipe(s)</p>
+                    <button class="btn btn-success" onclick="generateGroceryList()">Generate Grocery List</button>
+                </div>
+
+                <div id="groceryListDisplay" class="grocery-list hidden">
+                    <h3>Combined Grocery List</h3>
+                    <div class="grocery-categories" id="groceryCategories">
+                    </div>
+                    <div class="grocery-actions">
+                        <button class="btn btn-secondary" onclick="exportGroceryList()">Export as Text</button>
+                        <button class="btn btn-secondary" onclick="clearGroceryList()">Clear List</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Just Meal Planner • Data Flow: URL → Scrape → Validate → Normalize → Grocery List</p>
+            <p class="api-endpoint">API: <code id="apiEndpoint">http://localhost:5000</code></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

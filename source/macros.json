@@ -3,6 +3,7 @@
     "id": "af2b4646514e4e7db4cfb83577084b8f",
     "title": "Strawberry Rhubarb Crisp",
     "url": "https://www.acouplecooks.com/strawberry-rhubarb-crisp/",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "253 calories",
       "carbohydrateContent": "40.5 g",
@@ -20,6 +21,7 @@
     "id": "59ae6cb2a21d44809c3858d8b5a3d700",
     "title": "Bart's Best Hamburger Recipe",
     "url": "https://addapinch.com/barts-best-hamburgers-recipe/#",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "694 kcal",
       "carbohydrateContent": "28 g",
@@ -37,6 +39,7 @@
     "id": "13a13208404d4b778b65ef368b273363",
     "title": "Cheesy Ground Chicken and Chorizo Meatballs",
     "url": "https://aflavorjournal.com/cheesy-ground-chicken-and-chorizo-meatballs/",
+    "yield_servings": "15 servings",
     "macros": {
       "calories": "72 kcal",
       "carbohydrateContent": "3 g",
@@ -56,6 +59,7 @@
     "id": "99cf4c7aae7646c19b71caf4fb274e8f",
     "title": "Gochujang Salmon Bowls",
     "url": "https://allthehealthythings.com/gochujang-salmon-bowls/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "421 calories",
       "carbohydrateContent": "17.6 g",
@@ -73,6 +77,7 @@
     "id": "aed2dd1e4e9e46e387c64b42d4e35dcc",
     "title": "Simple Smoked Homemade Pastrami Recipe from Corned Beef",
     "url": "https://amazingribs.com/tested-recipes/beef-and-bison-recipes/home-made-pastrami-thats-close-katzs-recipe/",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "292 kcal",
       "carbohydrateContent": "9 g",
@@ -90,6 +95,7 @@
     "id": "1d2d3c13ce4f443183fd9e3e1196f04a",
     "title": "Thai Chicken Coconut Curry",
     "url": "https://www.averiecooks.com/thai-chicken-coconut-curry/",
+    "yield_servings": "6 servings",
     "macros": {
       "calories": "474 kcal",
       "carbohydrateContent": "34 g",
@@ -108,6 +114,7 @@
     "id": "c41c27ef8215439a885bda603da1d8e1",
     "title": "Pistachio Financiers",
     "url": "https://www.baking-sense.com/2025/06/12/pistachio-financiers/",
+    "yield_servings": "24 servings",
     "macros": {
       "calories": "92 kcal",
       "carbohydrateContent": "10 g",
@@ -127,6 +134,7 @@
     "id": "ce9b6718e17442e98ac55b81831897bf",
     "title": "Easy Weeknight Mozzarella Chicken",
     "url": "https://bakingmischief.com/mozzarella-chicken/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "782 kcal",
       "servingSize": "1 serving"
@@ -136,6 +144,7 @@
     "id": "d781e54e111846f7af21399cd4a8d791",
     "title": "Frito Pie Casserole",
     "url": "https://barefeetinthekitchen.com/frito-pie-casserole/",
+    "yield_servings": "6 servings",
     "macros": {
       "calories": "425 kcal",
       "carbohydrateContent": "2 g",
@@ -155,6 +164,7 @@
     "id": "b21ee48e37974255b88cf6ccfb7989a4",
     "title": "Easy Pineapple Upside-Down Cake",
     "url": "https://www.bettycrocker.com/recipes/easy-pineapple-upside-down-cake/c4d3321d-fad9-41cb-8f29-8d91a4279b07",
+    "yield_servings": "12 servings",
     "macros": {
       "calories": "360",
       "carbohydrateContent": "58 g",
@@ -173,6 +183,7 @@
     "id": "d6e171f23e494f5db89fc8cc19f8b7e7",
     "title": "Cilantro Lime Rice (easy side dish)",
     "url": "https://biancazapatka.com/en/cilantro-lime-rice/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "205 kcal",
       "carbohydrateContent": "42.7 g",
@@ -189,6 +200,7 @@
     "id": "c2839a239ab249daae8790c650f3f16d",
     "title": "Vegan Jollof Rice",
     "url": "https://www.bigoven.com/recipe/vegan-jollof-rice/3160003",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "278 calories",
       "carbohydrateContent": "61.6066428475211 g",
@@ -207,6 +219,7 @@
     "id": "d9fcccc8adac40918866c5b29c0690b4",
     "title": "Chickpeas With Baby Spinach",
     "url": "https://cooking.nytimes.com/recipes/1012408-chickpeas-with-baby-spinach",
+    "yield_servings": "0 servings",
     "macros": {
       "calories": "306",
       "carbohydrateContent": "43 grams",
@@ -224,6 +237,7 @@
     "id": "77a6041417244fb4838a4eef1b888c5d",
     "title": "Greek Chicken Quinoa Bowls",
     "url": "https://www.closetcooking.com/greek-chicken-quinoa-bowls",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "Calories 382",
       "carbohydrateContent": "Carbs 32g",
@@ -241,6 +255,7 @@
     "id": "ee27d226392c4a5a8bdaf764b30cf64a",
     "title": "Asian-Style Chicken Salad",
     "url": "https://www.food.com/recipe/asian-style-chicken-salad-264185",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "269.1",
       "carbohydrateContent": "35.8",
@@ -257,6 +272,7 @@
     "id": "0d127fc3ef1f4b6191098ac09cdbba84",
     "title": "Grilled Swordfish with Lemon, Mint and Basil",
     "url": "https://www.foodnetwork.com/recipes/giada-de-laurentiis/grilled-swordfish-with-lemon-mint-and-basil-recipe-1941592",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "470",
       "carbohydrateContent": "2g",
@@ -274,6 +290,7 @@
     "id": "6f6c015873464e16a2f74b3f58bd9026",
     "title": "Gluten Free Flatbread Recipe",
     "url": "https://glutenfreeonashoestring.com/soft-gluten-free-flatbread-piadina/",
+    "yield_servings": "2 servings",
     "macros": {
       "calories": "328 kcal",
       "carbohydrateContent": "60 g",
@@ -291,6 +308,7 @@
     "id": "0371d30ba5a24f92964f36516032f502",
     "title": "Boursin Potato Salad",
     "url": "https://ingoodflavor.com/boursin-potato-salad-6/",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "300 cal"
     }
@@ -299,6 +317,7 @@
     "id": "04d2577a4a3f461d9988c3ded391f212",
     "title": "Gnarly lamb madras traybake",
     "url": "https://www.jamieoliver.com/recipes/lamb/gnarly-lamb-madras-traybake",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "633 calories",
       "carbohydrateContent": "38.6 g",
@@ -314,6 +333,7 @@
     "id": "1bbe3165718447b29ae43fd8ff42ecee",
     "title": "Asian Cabbage Salad with 3-ingredient Miso Dressing",
     "url": "https://www.justonecookbook.com/asian-cabbage-salad/",
+    "yield_servings": "6 servings",
     "macros": {
       "calories": "245 kcal",
       "carbohydrateContent": "15 g",
@@ -332,6 +352,7 @@
     "id": "1ebb6cf3ab144075b9577069102db825",
     "title": "Coconut Macaroons",
     "url": "https://littlesunnykitchen.com/coconut-macaroons/",
+    "yield_servings": "20 servings",
     "macros": {
       "calories": "169 kcal",
       "carbohydrateContent": "17 g",
@@ -351,6 +372,7 @@
     "id": "840aef874e304baabcec524a2fecd2ae",
     "title": "Hawaiian Chicken Recipe",
     "url": "https://www.momontimeout.com/hawaiian-chicken-recipe/",
+    "yield_servings": "6 servings",
     "macros": {
       "calories": "292 kcal",
       "carbohydrateContent": "24 g",
@@ -370,6 +392,7 @@
     "id": "7ace561a31fd42d2a88d2fdcafb20fb1",
     "title": "Korean Watermelon Punch (Subak Hwachae)",
     "url": "https://mykoreankitchen.com/korean-watermelon-punch/",
+    "yield_servings": "2 servings",
     "macros": {
       "calories": "200 kcal",
       "carbohydrateContent": "50 g",
@@ -384,6 +407,7 @@
     "id": "345b069c66b8497dbe12ef831173c206",
     "title": "30-Minute Creamy Tuscan Kale White Bean Soup",
     "url": "https://im-worthy.com/tuscan-kale-white-bean-soup/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "236 kcal",
       "servingSize": "1 serving"
@@ -393,6 +417,7 @@
     "id": "c79dab7282b1417696005638ba22322e",
     "title": "Air-Fried Pork Chops",
     "url": "https://www.cdkitchen.com/recipes/recs/373/Air-Fried-Pork-Chops126201.shtml",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "262 calories",
       "servingSize": "per serving"
@@ -402,6 +427,7 @@
     "id": "f58aa5a998f34e0ba04fdca3e0a45bdd",
     "title": "Apple Dutch Baby Pancake",
     "url": "https://bluejeanchef.com/recipes/apple-dutch-baby-pancake/",
+    "yield_servings": "6 servings",
     "macros": {
       "calories": "248 kcal",
       "carbohydrateContent": "25 g",
@@ -421,6 +447,7 @@
     "id": "2634ad30646542b99ec4560668068d22",
     "title": "Apple Pie Stuffed Cupcakes",
     "url": "https://www.bettycrocker.com/recipes/apple-pie-stuffed-cupcakes/1f055dea-bdb3-4afe-902a-e6258cf6ba2a",
+    "yield_servings": "22 servings",
     "macros": {
       "calories": "190",
       "carbohydrateContent": "24 g",
@@ -439,6 +466,7 @@
     "id": "07cdba6195264c25b499110e22218143",
     "title": "Basler Mehlsuppe",
     "url": "https://www.bettybossi.ch/de/rezepte/rezept/basler-mehlsuppe-10003127/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "253 kcal",
       "carbohydrateContent": "11 g",
@@ -451,6 +479,7 @@
     "id": "355e108d97144fc8a5206b666886fc01",
     "title": "Puppy Chow Recipe (Muddy Buddies)",
     "url": "https://joyfoodsunshine.com/puppy-chow-recipe/",
+    "yield_servings": "15 servings",
     "macros": {
       "calories": "230.6 kcal",
       "carbohydrateContent": "28.6 g",
@@ -465,6 +494,7 @@
     "id": "53b072b128d245d3941c8cbd64154d60",
     "title": "Chicken and Bok Choy Stir Fry",
     "url": "https://www.familyfoodonthetable.com/chicken-and-bok-choy-stir-fry/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "279 kcal",
       "carbohydrateContent": "10 g",
@@ -484,6 +514,7 @@
     "id": "4a68eddc293d4c74ba7b36c109651e3d",
     "title": "Creamy Chicken and Wild Rice Soup (Small Batch)",
     "url": "https://aflavorjournal.com/creamy-chicken-wild-rice-soup-small-batch/",
+    "yield_servings": "6 servings",
     "macros": {
       "calories": "237 kcal",
       "carbohydrateContent": "13 g",
@@ -503,6 +534,7 @@
     "id": "2168b6acf3f34f749968b14cea7141c5",
     "title": "Skyline Chili (Cincinnati Chili)",
     "url": "https://www.budgetbytes.com/skyline-chili-cincinnati-chili/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "1008 kcal",
       "carbohydrateContent": "101 g",
@@ -517,6 +549,7 @@
     "id": "6fdb693a13ba486aa7ce02d0ec597301",
     "title": "Corn Pudding",
     "url": "https://chefsavvy.com/corn-pudding/",
+    "yield_servings": "6 servings",
     "macros": {
       "calories": "343.11 kcal",
       "carbohydrateContent": "34.16 g",
@@ -534,6 +567,7 @@
     "id": "3dd8cc0342c9467db06e1dea63a9976a",
     "title": "Cranberry Sauce Recipe",
     "url": "https://www.farmhouseonboone.com/cranberry-sauce-recipe/",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "91 kcal",
       "carbohydrateContent": "24 g",
@@ -551,6 +585,7 @@
     "id": "ccf529d5bc4945ca9e20fdc594ba0847",
     "title": "Cranberry-Aperol Spritz",
     "url": "https://www.delish.com/cooking/recipe-ideas/a45293549/cranberry-aperol-spritz-recipe/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "241 Calories",
       "carbohydrateContent": "19 g",
@@ -568,6 +603,7 @@
     "id": "0bfaad349cea4b5195514a77cec0c49f",
     "title": "Creamy 40 Clove Garlic Chicken Pasta",
     "url": "https://www.closetcooking.com/creamy-40-clove-garlic-chicken-pasta/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "Calories 478",
       "carbohydrateContent": "Carbs 58g",
@@ -585,6 +621,7 @@
     "id": "17414a44613049e6ab40c48e8b94dafe",
     "title": "Dalgona Coffee (Whipped Coffee)",
     "url": "https://cafedelites.com/dalgona-whipped-coffee/",
+    "yield_servings": "2 servings",
     "macros": {
       "calories": "132 kcal",
       "carbohydrateContent": "21 g",
@@ -602,6 +639,7 @@
     "id": "3e1c21fbdfe84bc2baabdbeea136fda7",
     "title": "",
     "url": "https://www.foodrepublic.com/1972150/easy-weeknight-chipotle-burger-bowl-recipe/",
+    "yield_servings": "2 servings",
     "macros": {
       "calories": "1804 calories",
       "carbohydrateContent": "45 g carbohydrates",
@@ -620,6 +658,7 @@
     "id": "3ec8e2da5ce2425b93560a6fc49ffa34",
     "title": "Garlic Mushroom Chicken Thighs with Sun-Dried Tomatoes",
     "url": "https://www.eatwell101.com/garlic-mushroom-chicken-thighs-recipe",
+    "yield_servings": "6 servings",
     "macros": {
       "calories": "457 calories"
     }
@@ -628,6 +667,7 @@
     "id": "17e423dd955346729910c58a869f269b",
     "title": "Green Bean Casserole",
     "url": "https://www.foodnetwork.com/recipes/ree-drummond/green-bean-casserole-recipe-2042535",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "276",
       "carbohydrateContent": "23g",
@@ -645,6 +685,7 @@
     "id": "89b85a3696d94db7a2368b69f80ff694",
     "title": "Harissa roast chicken traybake",
     "url": "https://www.jamieoliver.com/recipes/chicken/harissa-roast-chicken-traybake/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "499 calories",
       "carbohydrateContent": "34.4 g",
@@ -660,6 +701,7 @@
     "id": "7674078555444601b416ba3065ddef36",
     "title": "Homemade Brown and Serve Rolls",
     "url": "https://www.kingarthurbaking.com/recipes/homemade-brown-and-serve-rolls-recipe",
+    "yield_servings": "18 servings",
     "macros": {
       "calories": "190 calories",
       "carbohydrateContent": "29g",
@@ -678,6 +720,7 @@
     "id": "c49c38ee132045889981510cc8a8c92f",
     "title": "Homemade Chicken Noodle Soup",
     "url": "https://www.food.com/recipe/homemade-chicken-noodle-soup-8528",
+    "yield_servings": "12 servings",
     "macros": {
       "calories": "277.5",
       "carbohydrateContent": "28.3",
@@ -694,6 +737,7 @@
     "id": "fa0c9b9b8ced4166b6eb80048323f2cf",
     "title": "Winter Salad",
     "url": "https://barefeetinthekitchen.com/winter-salad/",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "292 kcal",
       "carbohydrateContent": "23 g",
@@ -712,6 +756,7 @@
     "id": "150681a544814573bee6864a07443892",
     "title": "Juicy Slow Cooker Boneless Turkey Breast",
     "url": "https://www.bowlofdelicious.com/slow-cooker-turkey-breast/",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "231 kcal",
       "carbohydrateContent": "2 g",
@@ -729,6 +774,7 @@
     "id": "af860c4315be41d680514613529dac1c",
     "title": "Keto Pumpkin Pancakes",
     "url": "https://www.castironketo.net/blog/pumpkin-keto-pancakes/",
+    "yield_servings": "12 servings",
     "macros": {
       "calories": "108 kcal",
       "carbohydrateContent": "5 g",
@@ -748,6 +794,7 @@
     "id": "fc8571b8e3354fcd9fb4e399d7b6d75b",
     "title": "Lamb Ragu with Pappardelle",
     "url": "https://www.americastestkitchen.com/recipes/11934-lamb-ragu-with-pappardelle",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "834",
       "carbohydrateContent": "106 g",
@@ -761,6 +808,7 @@
     "id": "12ebb5a111a547ff83edf7f10eb28e8f",
     "title": "Luchi",
     "url": "https://www.bongeats.com/recipe/luchi#recipe-ingredients",
+    "yield_servings": "20 servings",
     "macros": {
       "calories": "250"
     }
@@ -769,6 +817,7 @@
     "id": "f4fedcf49b58427ab48ee3545bace3e1",
     "title": "McDonald\u2019s Caramel Frappe",
     "url": "https://copykat.com/mcdonalds-caramel-frappe/",
+    "yield_servings": "1 serving",
     "macros": {
       "calories": "284 kcal",
       "carbohydrateContent": "39 g",
@@ -786,6 +835,7 @@
     "id": "df0e528b6d714ac0ace5405c9e7676a3",
     "title": "Pizza Baked Oats",
     "url": "https://elavegan.com/pizza-baked-oats/",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "127 kcal",
       "carbohydrateContent": "20 g",
@@ -802,6 +852,7 @@
     "id": "2049ca3a2b8746abbdcd37262d51da14",
     "title": "One-Pot Hoisin Beef Meatball Ramen with Bok Choy, Napa Cabbage & Sriracha",
     "url": "https://www.hellofresh.com/recipes/one-pot-hoisin-beef-meatball-ramen-6706c60366150a260f49b377",
+    "yield_servings": "2 servings",
     "macros": {
       "calories": "690 kcal",
       "carbohydrateContent": "66 g",
@@ -818,6 +869,7 @@
     "id": "353caca0a32349ffa0d837a60605e197",
     "title": "PF Chang's Chicken Lettuce Wraps Recipe",
     "url": "https://www.evolvingtable.com/pf-changs-chicken-lettuce-wraps/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "566 kcal",
       "carbohydrateContent": "26 g",
@@ -837,6 +889,7 @@
     "id": "71205f5cf9944f55b93ba7ce738130f6",
     "title": "Philly Cheesesteak Quesadillas with crema",
     "url": "https://www.homechef.com/meals/philly-cheesesteak-quesadillas",
+    "yield_servings": "2 servings",
     "macros": {
       "calories": "770",
       "carbohydrateContent": "55g",
@@ -850,6 +903,7 @@
     "id": "ba3d3be84d1b40e7bf41636beaacb19f",
     "title": "Classic Pinto Beans with Hamburger Meat",
     "url": "https://www.foodfidelity.com/pinto-beans-with-ground-beef/",
+    "yield_servings": "8 servings",
     "macros": {
       "calories": "546 kcal",
       "carbohydrateContent": "42 g",
@@ -869,6 +923,7 @@
     "id": "59ca2795ca664022918916b6a0845a14",
     "title": "Pumpkin Cheesecake Bars",
     "url": "https://celebratingsweets.com/pumpkin-cheesecake-bars/",
+    "yield_servings": "18 servings",
     "macros": {
       "calories": "294 kcal",
       "carbohydrateContent": "26 g",
@@ -888,6 +943,7 @@
     "id": "23a12520bcd54153a3cf2c7a42491075",
     "title": "Pumpkin Cheesecake Bars",
     "url": "https://www.dinneratthezoo.com/pumpkin-cheesecake-bars/",
+    "yield_servings": "24 servings",
     "macros": {
       "calories": "173 kcal",
       "carbohydrateContent": "27 g",
@@ -905,6 +961,7 @@
     "id": "7f4dfac514ee4e9eac0d35776684406a",
     "title": "Pumpkin Flan Cake with Maple Brown Butter Glaze",
     "url": "https://ingoodflavor.com/pumpkin-flan-cake-with-maple-brown-butter-glaze/",
+    "yield_servings": "10 servings",
     "macros": {
       "calories": "300 cal"
     }
@@ -913,6 +970,7 @@
     "id": "0573138a9813453eb73d07b3717be00e",
     "title": "Quick and Easy Spaghetti Bolognese",
     "url": "https://www.errenskitchen.com/quick-easy-spaghetti-bolognese/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "487 kcal",
       "carbohydrateContent": "46 g",
@@ -930,6 +988,7 @@
     "id": "4496fcb613f44076b1faf47325a6a815",
     "title": "K\u00f6ttf\u00e4rsgryta med potatis",
     "url": "https://www.arla.se/recept/kottfarsgryta-med-potatis/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "679 kcal",
       "carbohydrateContent": "70 g",
@@ -944,6 +1003,7 @@
     "id": "92e31ff4269e4ef7a5399d6567a2aca1",
     "title": "Risotto-Filled Eggplant Rollatini",
     "url": "https://www.forksoverknives.com/recipes/vegan-baked-stuffed/risotto-filled-eggplant-rollatini/?_gl=1*1sicbmw*_ga*MjE0NDI0MDI0MC4xNzYyOTcxMTA0*_ga_DZKDMJXGWC*czE3NjI5NzExMDUkbzEkZzAkdDE3NjI5NzExMDUkajYwJGwwJGgw",
+    "yield_servings": "16 to 18 rolls",
     "macros": {
       "calories": "511 calories",
       "carbohydrateContent": "86 grams",
@@ -961,6 +1021,7 @@
     "id": "578c99866e3a4309a23703b572801996",
     "title": "Skillet Ribeye Steaks Recipe",
     "url": "https://addapinch.com/skillet-rib-eye-steaks-recipe/",
+    "yield_servings": "2 servings",
     "macros": {
       "calories": "347 kcal",
       "cholesterolContent": "83 mg",
@@ -975,6 +1036,7 @@
     "id": "97ae274be2f54be4be96d31548338c30",
     "title": "Slow-cooker beef stew",
     "url": "https://www.bbcgoodfood.com/recipes/slow-cooker-beef-stew",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "474 calories",
       "carbohydrateContent": "10 grams carbohydrates",
@@ -990,6 +1052,7 @@
     "id": "8ab40eebe24c47d29d072182bfe61442",
     "title": "Southern Banana Pudding Recipe",
     "url": "https://addapinch.com/southern-banana-pudding/#wprm-recipe-container-28805",
+    "yield_servings": "12 servings",
     "macros": {
       "calories": "346 kcal",
       "carbohydrateContent": "64 g",
@@ -1009,6 +1072,7 @@
     "id": "fe142837ed6b478e867367af61245d24",
     "title": "Strawberry Tiramisu Recipe",
     "url": "https://www.fifteenspatulas.com/strawberry-tiramisu/",
+    "yield_servings": "10 servings",
     "macros": {
       "calories": "502 kcal",
       "carbohydrateContent": "38 g",
@@ -1027,6 +1091,7 @@
     "id": "1ac0387e22ea4df981417788d59003df",
     "title": "The Best Chocolate Chip Pancakes",
     "url": "https://bakingmischief.com/chocolate-chip-pancakes/",
+    "yield_servings": "16 servings",
     "macros": {
       "calories": "316 kcal",
       "servingSize": "1 pancake"
@@ -1036,6 +1101,7 @@
     "id": "a327b515b07046e9b9afd9d5f2020530",
     "title": "Pumpkin Cinnamon Rolls",
     "url": "https://allthehealthythings.com/pumpkin-cinnamon-rolls/",
+    "yield_servings": "12 servings",
     "macros": {
       "calories": "504 calories",
       "carbohydrateContent": "72.3 g",
@@ -1054,6 +1120,7 @@
     "id": "1d0470f3fd174a7781fc15b56725bece",
     "title": "Maple Mustard Tahini Dressing",
     "url": "https://downshiftology.com/recipes/maple-mustard-tahini-dressing/",
+    "yield_servings": "5 servings",
     "macros": {
       "calories": "87 kcal",
       "carbohydrateContent": "6 g",
@@ -1071,6 +1138,7 @@
     "id": "45328df266364902909d8e5519acc3f1",
     "title": "Traditional Gujarati Mohanthal Recipe - Gram Flour Fudge with Nuts and Saffron",
     "url": "https://www.archanaskitchen.com/recipe/gujarati-mohanthal-a-gram-flour-fudge-with-nuts-and-saffron",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "277 kcal",
       "carbohydrateContent": "64 g",
@@ -1084,6 +1152,7 @@
     "id": "ded46bddcd604f82bc55b5e6de843ca4",
     "title": "Vegan Sheet Pan Fajitas",
     "url": "https://biancazapatka.com/en/vegan-fajitas/",
+    "yield_servings": "4 servings",
     "macros": {
       "calories": "140.6 kcal",
       "carbohydrateContent": "11.2 g",

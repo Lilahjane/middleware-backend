@@ -1,0 +1,807 @@
+/* ============================================================================
+   JUST MEAL PLANNER - Frontend UI Stylesheet
+   ============================================================================ */
+
+:root {
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-success: #16a34a;
+    --color-success-hover: #15803d;
+    --color-danger: #dc2626;
+    --color-danger-hover: #b91c1c;
+    --color-warning: #ea580c;
+    --color-neutral: #6b7280;
+    --color-neutral-light: #f3f4f6;
+    --color-neutral-lighter: #f9fafb;
+    --color-border: #e5e7eb;
+    --color-text: #1f2937;
+    --color-text-light: #6b7280;
+    --color-error-bg: #fee2e2;
+    --color-error-border: #fca5a5;
+    
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    
+    --border-radius: 0.5rem;
+    --border-radius-lg: 1rem;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: var(--color-neutral-lighter);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* ============================================================================
+   LAYOUT & CONTAINER
+   ============================================================================ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================================================
+   HEADER
+   ============================================================================ */
+
+.header {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #1e40af 100%);
+    color: white;
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    margin-bottom: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+}
+
+.header .subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: var(--spacing-lg);
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    font-size: 0.9rem;
+}
+
+.status-indicator {
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.status-indicator.waiting {
+    background-color: rgba(255, 193, 7, 0.3);
+}
+
+.status-indicator.ok {
+    background-color: rgba(76, 175, 80, 0.3);
+}
+
+.status-indicator.error {
+    background-color: rgba(244, 67, 54, 0.3);
+}
+
+.divider {
+    opacity: 0.5;
+}
+
+.error-count {
+    font-size: 0.9rem;
+}
+
+/* ============================================================================
+   MAIN CONTENT & SECTIONS
+   ============================================================================ */
+
+.main-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.section {
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--color-neutral-light);
+}
+
+.section-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.section-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ============================================================================
+   FORM ELEMENTS
+   ============================================================================ */
+
+.input-group {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.url-input {
+    flex: 1;
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.url-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.url-input::placeholder {
+    color: var(--color-text-light);
+}
+
+/* ============================================================================
+   BUTTONS
+   ============================================================================ */
+
+.btn {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    white-space: nowrap;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-secondary {
+    background-color: var(--color-neutral-light);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-neutral);
+    color: white;
+}
+
+.btn-success {
+    background-color: var(--color-success);
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: var(--color-success-hover);
+}
+
+/* ============================================================================
+   PROGRESS & LOADING
+   ============================================================================ */
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background-color: var(--color-neutral-lighter);
+    border-radius: var(--border-radius);
+    color: var(--color-neutral);
+}
+
+.spinner {
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid var(--color-neutral-light);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ============================================================================
+   RAW DATA & COLLAPSIBLE
+   ============================================================================ */
+
+.raw-data-container {
+    margin-top: var(--spacing-lg);
+}
+
+details {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    cursor: pointer;
+}
+
+summary {
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+summary:hover {
+    color: var(--color-primary-hover);
+}
+
+details[open] summary {
+    margin-bottom: var(--spacing-lg);
+}
+
+pre {
+    background-color: var(--color-neutral-lighter);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    overflow-x: auto;
+    font-size: 0.85rem;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+/* ============================================================================
+   ERROR DISPLAY
+   ============================================================================ */
+
+.error-display {
+    margin-bottom: var(--spacing-lg);
+}
+
+.error-box {
+    background-color: var(--color-error-bg);
+    border: 1px solid var(--color-error-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+}
+
+.error-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.error-icon {
+    font-size: 1.5rem;
+}
+
+.error-type {
+    font-weight: 700;
+    color: var(--color-danger);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.error-content {
+    margin-bottom: var(--spacing-lg);
+}
+
+.error-message {
+    color: var(--color-text);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+.error-details {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+}
+
+.error-details p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.error-details code {
+    background-color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+}
+
+.error-actions {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.error-log {
+    background-color: var(--color-neutral-lighter);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    margin-top: var(--spacing-md);
+}
+
+.error-log-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.error-log-item {
+    padding: var(--spacing-sm);
+    background-color: white;
+    border-left: 3px solid var(--color-warning);
+    border-radius: var(--border-radius);
+    font-size: 0.85rem;
+}
+
+.error-log-item strong {
+    display: block;
+    color: var(--color-warning);
+}
+
+/* ============================================================================
+   RECIPE CARD & CONFIRMATION
+   ============================================================================ */
+
+.recipe-card {
+    border: 2px solid var(--color-success);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, rgba(22, 163, 74, 0.02) 0%, rgba(34, 197, 94, 0.02) 100%);
+}
+
+.recipe-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.recipe-header h3 {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.recipe-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-md);
+}
+
+.recipe-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: white;
+    border-radius: var(--border-radius);
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item .label {
+    font-weight: 600;
+    color: var(--color-text-light);
+    font-size: 0.85rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.recipe-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.id-assignment {
+    background-color: rgba(34, 197, 94, 0.1);
+    border: 2px solid var(--color-success);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    text-align: center;
+}
+
+.id-box .label {
+    font-weight: 700;
+    color: var(--color-success);
+    margin-bottom: var(--spacing-md);
+}
+
+.recipe-id-display {
+    background-color: white;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    display: block;
+    word-break: break-all;
+    margin-bottom: var(--spacing-md);
+}
+
+.id-box .note {
+    font-size: 0.9rem;
+    color: var(--color-success);
+}
+
+/* ============================================================================
+   INGREDIENT TABLE
+   ============================================================================ */
+
+.ingredient-table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--spacing-lg);
+}
+
+table thead {
+    background-color: var(--color-neutral-light);
+}
+
+table th {
+    padding: var(--spacing-md);
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-text);
+    border-bottom: 2px solid var(--color-border);
+}
+
+table td {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.95rem;
+}
+
+table tbody tr:hover {
+    background-color: var(--color-neutral-lighter);
+}
+
+.unresolved-warning {
+    background-color: rgba(234, 88, 12, 0.1);
+    border: 1px solid rgba(234, 88, 12, 0.3);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    color: var(--color-warning);
+    font-size: 0.9rem;
+    margin-top: var(--spacing-md);
+}
+
+/* ============================================================================
+   SCALING CONTROLS
+   ============================================================================ */
+
+.scaling-controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.scaling-input-group {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.scaling-input-group label {
+    font-weight: 600;
+}
+
+.serving-select, .custom-input {
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+.serving-select {
+    min-width: 150px;
+}
+
+.custom-input {
+    width: 100px;
+}
+
+.scaling-table {
+    overflow-x: auto;
+}
+
+.scaling-table table td:nth-child(2),
+.scaling-table table td:nth-child(3) {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+}
+
+.scaling-table table td:nth-child(3) {
+    color: var(--color-primary);
+}
+
+.scaling-table table td:nth-child(4) {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
+/* ============================================================================
+   GROCERY LIST
+   ============================================================================ */
+
+.grocery-controls {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--color-neutral-lighter);
+    border-radius: var(--border-radius);
+}
+
+.grocery-controls .info {
+    margin-bottom: var(--spacing-md);
+}
+
+.grocery-list {
+    background-color: rgba(34, 197, 94, 0.03);
+    border: 2px solid var(--color-success);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+}
+
+.grocery-list h3 {
+    color: var(--color-success);
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.3rem;
+}
+
+.grocery-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.grocery-category {
+    background-color: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+}
+
+.grocery-category h4 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+    border-bottom: 2px solid var(--color-neutral-light);
+    padding-bottom: var(--spacing-sm);
+}
+
+.grocery-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-neutral-lighter);
+}
+
+.grocery-item:last-child {
+    border-bottom: none;
+}
+
+.grocery-item input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.grocery-item label {
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.grocery-item input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: var(--color-text-light);
+}
+
+.grocery-quantity {
+    font-family: 'Courier New', monospace;
+    color: var(--color-primary);
+    font-weight: 600;
+    min-width: 80px;
+    text-align: right;
+}
+
+.grocery-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
+
+.footer {
+    background-color: var(--color-neutral-light);
+    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-lg);
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: var(--spacing-sm) 0;
+}
+
+.footer code {
+    background-color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    font-family: 'Courier New', monospace;
+}
+
+/* ============================================================================
+   UTILITY CLASSES
+   ============================================================================ */
+
+.hidden {
+    display: none !important;
+}
+
+/* ============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================ */
+
+@media (max-width: 1024px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .grocery-categories {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: var(--spacing-md);
+    }
+    
+    .header {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    .url-input {
+        width: 100%;
+    }
+    
+    .recipe-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .recipe-actions {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .scaling-input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .serving-select {
+        width: 100%;
+    }
+    
+    table {
+        font-size: 0.85rem;
+    }
+    
+    table th, table td {
+        padding: var(--spacing-sm);
+    }
+}

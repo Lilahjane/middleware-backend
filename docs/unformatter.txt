@@ -1,0 +1,25 @@
+Here are all the keys present in the JSON object:
+
+author
+canonical_url
+category
+cook_time
+cooking_method
+cuisine
+description
+dietary_restrictions
+error
+host
+image
+instructions_list
+keywords
+language
+prep_time
+ratings
+ratings_count
+reviews
+site_name
+title
+total_time
+url
+yields
